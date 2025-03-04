@@ -40,6 +40,34 @@
             <input type="radio" name="fruit" id="banana" value="banana" />
             <label for="banana">banana</label>
         </div>
+        <hr>
+        <br>
+        <div>
+            Choose your subjects:
+            <input type="checkbox" id="math" name="sub" value="math">
+            <label for="math">math</label>
+            <input type="checkbox" id="science" name="sub" value="sci" >
+            <label for="science">science</label>
+            <input type="checkbox" id="English" name="sub" value="eng">
+            <label for="English">English</label>
+        </div>
+        <hr>
+        <div>
+            Choose your profession
+            <select name="profession" id="profession">
+                <option > select your option</option>
+                <option value="stu" >student</option>
+                <option value="dev" selected>Developer</option>
+
+            </select>
+        </div>
+        <hr>
+        <label for="vol">select your volume level:</label>
+        <input type="range" id="vol" min="0" max="100" name="vol" step="10" value="70"/>
+        <br>
+        <hr>
+        <label for="feedback">please give your valuable feedback:</label>
+        <textarea id="feedback" name="feedback" placeholder="write your feedback here"></textarea>
         <button>submit</button>
     </form>
 </body>

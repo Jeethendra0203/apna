@@ -2,3 +2,12 @@ h1 {
     color: red;
     background-color: black;
 }
+p {
+    color: rgb(128, 5, 244);
+    background-color: chartreuse;
+}
+
+button {
+    color: rgb(255, 106, 0);
+    background-color: black;
+}

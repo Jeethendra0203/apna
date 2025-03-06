@@ -1,6 +1,8 @@
 h1 {
     text-align: center;
     text-decoration: red wavy underline;
+    font-family: 'Times New Roman', Times, serif;
+    
 }
 
 h2 {
@@ -11,6 +13,9 @@ h2 {
 p {
     text-align: justify;
     font-weight: 400;
+    font-size: 15px;
+    font-family: papyrus;
+    
 }
 
 h3 {

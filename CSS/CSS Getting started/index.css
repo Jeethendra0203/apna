@@ -3,7 +3,7 @@
 }
 
 h3 {
-    color: purple;
+    color: #F52936;
 }
 
 h1 {
@@ -22,4 +22,42 @@ h1 {
 .upvote {
     background-color: green ;
     color: aliceblue;
+}
+
+/* descendant selector */
+.post a {
+    color: purple;
+    background-color: yellow;
+}
+
+nav ul li a {
+    color: hotpink;
+}
+
+p + h3 {
+    text-decoration: underline;
+}
+
+.upvote + button {
+    background-color: cadetblue;
+    color: white;
+}
+
+div > input {
+    background-color: bisque;
+}
+
+input[type="text"] {
+    color: red;
+}
+
+input[type="password"] {
+    color: green;
+}
+input[type] {
+    background-color: blanchedalmond;
+}
+
+#myid  p {
+    color: green;
 }

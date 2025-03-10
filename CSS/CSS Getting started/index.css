@@ -24,7 +24,7 @@ h1 {
     color: aliceblue;
 }
 
-/* descendant selector */
+  /* descendant selector */
 .post a {
     color: purple;
     background-color: yellow;
@@ -60,4 +60,37 @@ input[type] {
 
 #myid  p {
     color: green;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+  /* Pseudo class */
+button:active {
+    background-color: red;
+    color: black;
+}
+
+p:active {
+    font-weight: bold;
+    color: green;
+}
+
+input[type="radio"]:checked + label {
+    color: red;
+    font-weight: bold;
+}
+
+div:nth-of-type(2n) {
+    background-color: blanchedalmond;
+}
+
+h1::first-letter {
+    color: green;
+}
+
+p::first-line {
+    color:deeppink;
 }

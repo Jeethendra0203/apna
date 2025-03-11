@@ -94,3 +94,7 @@ h1::first-letter {
 p::first-line {
     color:deeppink;
 }
+
+p::selection {
+    background-color: rgb(255, 240, 80);
+}

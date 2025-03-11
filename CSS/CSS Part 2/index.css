@@ -1,8 +1,9 @@
-* {
-    font-family: 'Courier New';
-}
-
-h3 {
+ h3 {
+    background-color: antiquewhite !important;
+ }
+ 
+ /* Basic Formate of CSS Also known as Element selector*/
+ h3 {
     color: #F52936;
 }
 
@@ -10,6 +11,12 @@ h1 {
     color: #F52936;
 }
 
+ /* Univarsal selector */
+* {
+    font-family: 'Courier New';
+}
+
+ /* ID selector */
 #login {
     background-color: white;
 }
@@ -19,6 +26,7 @@ h1 {
     color: white;
 }
 
+ /* CLASS selector */
 .upvote {
     background-color: green ;
     color: aliceblue;
@@ -29,6 +37,7 @@ h1 {
     color: purple;
     background-color: yellow;
 }
+
 
 nav ul li a {
     color: hotpink;
@@ -97,4 +106,12 @@ p::first-line {
 
 p::selection {
     background-color: rgb(255, 240, 80);
+}
+
+h3 {
+    background-color: yellow;
+}
+
+h3 {
+    background-color: blueviolet;
 }

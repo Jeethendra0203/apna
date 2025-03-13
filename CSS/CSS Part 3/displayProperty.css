@@ -1,0 +1,8 @@
+span {
+    /* background-color: lightgreen; */
+    border: 2px solid black;
+    height: 100px;
+    width: 200px;
+    padding: 50px;
+    margin: 20px;
+}

@@ -1,8 +1,42 @@
-span {
-    /* background-color: lightgreen; */
+span { 
+    /* background-color: lightgreen; */ 
     border: 2px solid black;
     height: 100px;
     width: 200px;
     padding: 50px;
     margin: 20px;
 }
+   /* Inline-block Code*/
+div {
+    height: 200px;
+    width: 200px;
+    background-color: greenyellow;
+    border: 2px solid black;
+    margin: 105px;
+    display: inline-block;
+}
+
+    /* hiding an element */
+#third {
+    display: none;
+} 
+
+    /* Relative Units (Percentage) */
+/* h1 {
+    border: 2px solid black;
+    width: 50%;
+}
+
+#outer  {
+    height: 300px;
+    width: 300px;
+    background-color: pink;
+    margin: 50px;
+}
+
+#inner {
+    height: 100px;
+    width: 100px;
+    background-color: cornflowerblue;
+    margin-left: 10%;
+} */

@@ -1,0 +1,15 @@
+div {
+    height: 100px;
+    width: 100px;
+    background-color: #4dff00ff;
+    
+    
+
+}
+
+  /* opacity */
+#opacity {
+    background-color: #ffa511;
+    opacity: 0.5;
+}
+

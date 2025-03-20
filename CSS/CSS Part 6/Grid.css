@@ -1,0 +1,17 @@
+.container {
+    height: 300px;
+    width: 600px;
+    background-color: yellow;
+    display: grid;
+    grid-template-rows: 50px 50px 50px 50px 50px;
+    grid-template-columns: 200px 200px 200px;
+}
+
+.item {
+    /* height: 50px;
+    width: 100px; */
+    background-color: yellowgreen;
+    border: 2px solid black;
+    text-align: center;
+}
+

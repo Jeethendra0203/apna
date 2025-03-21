@@ -2,16 +2,43 @@
     height: 300px;
     width: 600px;
     background-color: yellow;
-    display: grid;
-    grid-template-rows: 50px 50px 50px 50px 50px;
-    grid-template-columns: 200px 200px 200px;
+    display: inline-grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    /* row-gap: 10px;
+    column-gap: 30px; */
+    grid-gap: 10px;
+    /* justify-items: center;
+    align-items: center; */
+    place-items: center;
+
 }
 
 .item {
-    /* height: 50px;
-    width: 100px; */
+    height: 50px;
+    width: 100px;
     background-color: yellowgreen;
     border: 2px solid black;
     text-align: center;
 }
 
+/* .one {
+    place-self: start;
+} */
+
+/* .one {
+    justify-self: start;
+    align-self: end;
+} */
+
+/* .one {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-column: 1/span 2;
+} */
+
+/* .two {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-row: 1/ span 3;
+} */

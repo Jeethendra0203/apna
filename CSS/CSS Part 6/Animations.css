@@ -3,15 +3,46 @@
     width: 300px;
     background-color: aqua;
 
-    animation-name: fontAnimation;
-    animation-duration: 2s;
+    /* animation-name: widthanime;
+    animation-duration: 3s;
     animation-timing-function: ease-in;
     animation-delay: 0s;
-    animation-iteration-count: 3;
-    animation-direction: ;
+    animation-iteration-count: infinite;
+    animation-direction: normal; */
+
+
+    /* code in single line for animation */
+    animation: coloranime 3s ease-in infinite 0s normal;
 }
 
-@keyframe myanime {
+@keyframes coloranime {
+    0% {
+        background-color: red;
+    }
+    50% {
+        background-color: greenyellow;
+    }
+    70% {
+       background-color: orange;
+    }
+    100% {
+        background-color: blue;
+    }
+}
+
+@keyframes widthanime {
+    from {
+        width: 10px;
+        background-color: green;
+    }
+    to {
+        width: 400px;
+        background-color: blueviolet;
+        border-radius: 15px;
+    }
+}
+
+@keyframes myanime {
     from {
         font-size: 20px;
     }
@@ -19,3 +50,4 @@
         font-size: 40px;
     }
 }
+

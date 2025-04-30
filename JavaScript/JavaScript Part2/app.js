@@ -202,8 +202,200 @@ if(marks3 >= 50 || marks3 <= 55) {
 }
 
 //NOT Operators
-let marks4 = 66;
-if (!(marks < 35)) {
-    console.log("true")
-    console.log("true")
+
+let marks4 = 22;
+
+if ((marks4 > 35 && marks4<=80) ||  !false) {
+    console.log("pass")
+} else {
+    console.log("fail")
+}
+
+
+//Practice Qs
+
+let str1 = "apple";
+console.log(str1[0])
+console.log(str1.length)
+
+if ((str1[0] === "a") && (str1.length > 3)) {
+    console.log("Good String")
+}
+else {
+    console.log("Not a good String")
+}
+
+
+let numq = 12;
+
+if ((numq%3 === 0) && ( (numq+1 == 15) || (numq-1 == 11))) {
+    console.log("Safe")
+} else {
+    console.log("Unsafe")
+}
+
+var age8 = 75
+age8 > 24 ? console.log("yes") : console.log("no");
+
+//truthy and falsy
+
+let string = " ";
+
+if(string) {
+    console.log("string is not empty")
+} else {
+    console.log("string is empty")
+}
+
+
+let num = 0;
+
+if(num){
+    console.log("num is not equal to 0")
+} else {
+    console.log("num is equal to 0")
+}
+
+//Switch statment
+
+let color1 = "green"
+
+switch(color1) {
+    case "red" :
+        console.log("stop")
+        break;
+    case "yellow" :
+        console.log("slow down")
+        break;
+    case "green" :
+        console.log("Go")
+        break;
+    default :
+        console.log("Broken Ligths")
+}
+
+console.log("after switch")
+
+//Practice Qs
+
+let day = 8;
+
+switch(day) {
+    case 1 :
+        console.log("Monday");
+        break;
+    case 2 :
+        console.log("Tusday");
+        break;
+    case 3 :
+        console.log("Wednesday");
+        break;
+    case 4 :
+        console.log("Thursday");
+        break;        
+    case 5 :
+        console.log("Friday");
+        break;
+    case 6 :
+        console.log("Satarday");
+        break; 
+    case 7 :
+        console.log("Sunday");
+        break;   
+    default:
+        console.log("wrong day")    
+}
+
+// alert("Something is wrong!")
+console.log("This is a simple log")
+console.error("This is a simple error")
+console.warn("This is a warn error")
+
+// let firstName1 = prompt("enter your name :")
+// console.log(firstName1)
+
+// let firstName2 = prompt("enter first name");
+// let lastName2 = prompt("enter last name");
+// let msg = "welcome" +" "+ firstName2 +" "+ lastName2;
+// alert(msg);
+
+
+//Practice Qs 1
+
+let num1 = 80;
+
+if(num1 %10 === 0) {
+    console.log("good");
+} else {
+    console.log("bad")
+}
+
+//Practice Qs 2
+
+// let name1 = prompt("enter your name");
+// let age2 = prompt("enter your age");
+
+// alert(`${name1} is ${age2} years old`)
+
+
+//Practice Qs 3
+
+let Quarter = 1;
+
+switch(Quarter) {
+    case 1:
+        console.log("Months in Quarter 1: January,February,March");
+        break;
+    case 2:
+        console.log("Months in Quarter 2: April,May,June");
+        break;
+    case 3:
+        console.log("Months in Quarter 3: July,August,September");
+        break;
+    case 4:
+        console.log("Months in Quarter 4: October,November,December");
+        break;
+    default: console.log("Not a Quarter")    
+}
+
+//Practice Qs 4
+
+let str2 = "Anaconda";
+
+if( (str2[0] == "A") || (str2[0] == "a") && (str2.length > 5) ) {
+    console.log("Golden String")
+} else {
+    console.log("Not a golden string")
+}
+
+//Practice Qs 5
+
+let x = 3;
+let y = 33;
+let z = 333;
+
+if(x > y) {
+    if(x > z){
+    console.log("x, is the Largest")
+    } else {
+        console.log("z, is the Largest")
+    }  
+} else {
+    if(y > z) {
+        console.log("y, is the Largest") 
+    }
+    else {
+        console.log("z, is the Largest") 
+    }
+}
+
+//Practice Qs 6
+
+let dom1 = 23358;
+let dom2 = 200558;
+
+if((dom1%10)==(dom2%10)) {
+    console.log("numbers have same last digit which is", dom1%10);
+} else {
+    console.log("numbers don't have same last digit");
 }

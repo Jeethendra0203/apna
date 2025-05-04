@@ -157,8 +157,73 @@ console.log(nums[2][1]);
 
 //---- Practice Qs
 
-// 1 Create a nested array to show the following tic-tac-toe game state.
+// 1 Create a nested array to show the following tic-tac-toe game state.  
+
+// ['X',null,'0']
+// [null,'X',null]
+// ['0',null,'X']
 
 let game = [ ['X',null,'0'], [null,'X',null], ['0',null,'X'] ];
-console.log(game);
+console.log("Practice Qs","tic-tac-toe game",game);
 
+//---- Practice Qs
+
+// 1. Write a JavaScript program to get the first n elements of an array. [n can be any positive number].
+//    For example: for array[7, 9, 0, -2] and n = 3   print[7, 9, 0]
+
+let array = [7, 9, 0, -2];
+let n = 3;
+let ans = array.slice(0, n);
+console.log("Practice Qs 1",ans);
+
+
+// 2. Write a JavaScript program to get the last  n elements of an array. [n can be any positive number].
+//    For example: for array[7, 9, 0, -2] and n = 3   print[9, 0, -2]
+
+let ary =  [7, 9, 0, -2];
+let num = 3;
+let anss = ary.slice(ary.length-3);
+console.log("Practice Qs 2",anss);
+
+
+// 3. Write a JavaScript program to check whether a string is back or not.
+
+let str = prompt("please enter a srting")                     //---- prompt
+
+if(str.length == 0) {
+    console.log("Practice Qs 3","String is empty");
+} else {
+    console.log("Practice Qs 3","String is not empty")
+}   
+    console.log(str)
+
+
+// 4. Write a JavaScript program to test whether the character at the given (character) index is lower case.
+
+let strr = "ApNaCoLlEgE"
+let idx = 3;
+
+if(strr[idx] == strr[idx].toLowerCase()) {
+    console.log("Practice Qs 4","character is lowercase");
+} else {
+    console.log("character is not lowercase");
+}
+
+
+// 5. Write a JavaScript program to strip leading and trailing spaces from a string.
+
+let sttr = prompt("please enter a string");                    //---- prompt
+console.log("Practice Qs 5",`original string = ${sttr}`);
+console.log(`string without spaces = ${sttr.trim()}`);  
+
+
+// 6. Write a JavaScript program to check if element exists in an array OR not.
+
+let ele = ["jeethu","S", 22, 27];
+let item = 22;
+
+if(ele.indexOf(item) != -1) {
+    console.log("Practice Qs 6","element exists in array")
+} else {
+    console.log("element doesn't exists in array")
+}

@@ -2,7 +2,6 @@
   color: red;
 }
 
-
 .blue {
   color: blue;
 }
@@ -12,6 +11,18 @@
   background-color: pink;
 }
 
+#btn {
+  color: white;
+  background-color: blue;
+}
+
+h4 {
+  color: purple;
+}
+
+h2 {
+  color: green;
+}
 
 /* body {
   font-family: Arial;

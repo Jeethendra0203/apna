@@ -99,9 +99,63 @@ async function demo() {
         console.log("error caught");
         console.log(err);
     }
-     
-
     let a = 5;
     console.log(a);
     console.log("new number = ", a + 3);
 }
+
+
+//---- JSON
+
+let jsonRes = '{"fact":"A cat has the ability to rotate their ears 180 degrees,with the help of 32 muscles that they use to control them.","length":113}'
+
+
+let validRes = JSON.parse(jsonRes);
+console.log(validRes.fact);
+
+
+let student = {
+    name: "Jeethu",
+    marks: 88,
+};
+
+
+//---- First API request
+
+let url = "https://catfact.ninja/fact";
+
+// fetch(url)
+// .then((res) => {
+//     return res.json();
+// })
+// .then((data) => {
+//     console.log("data1 =  ",data.fact);
+//     return fetch(url);
+// })
+// .then((res) => {
+//     return res.json();
+// })
+// .then((data2) => {
+//     console.log("data2 =  ", data2.fact)
+// })
+// .catch((err) => {
+//     console.log("error -", err);
+// });
+
+
+//---- using Fetch with async-await
+
+async function getFacts() {
+    try {
+        let res = await fetch(url);
+        let data = await res.json();
+        console.log(data.fact);
+
+        let res2 = await fetch(url);
+        let data2 = await res2.json();
+        console.log(data2.fact);
+    } catch(e) {
+        console.log("ERROR = ", e);
+    }
+    console.log("bye")
+};

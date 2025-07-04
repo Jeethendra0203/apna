@@ -4,7 +4,6 @@ import LikeButton from './LikeButton';
 
 function App() {
 
-
   return (
     <>
     <h2>States in React</h2>

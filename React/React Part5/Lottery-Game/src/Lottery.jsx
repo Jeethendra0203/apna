@@ -1,15 +1,14 @@
 import { useState } from "react";
-import { genTickets, sum } from "./helper";
+import { genTicket } from "./helper";
 import Ticket from "./Ticket";
 
-export default function Lottery({n=3, winningSum=15}) {
-
-    let [ticket, setTickest] = useState(genTickets(n));
-    let isWinning = sum(ticket) === winningSum;
+export default function Lottery({ n=3, winCondition }) {
+    let [ticket, setTickets] = useState(genTicket(n));
+    let isWinning = winCondition(ticket);
 
     let getNewTicket = () => {
-        setTickest(genTickets(n));
-    }
+        setTickets(genTicket(n));
+    };
 
     return ( 
         <div>

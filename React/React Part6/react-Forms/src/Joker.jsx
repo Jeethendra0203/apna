@@ -29,4 +29,4 @@ export default function Joker() {
             <button onClick={getNewJoke}>New Joke</button>
         </div>
     );
-}
+};
